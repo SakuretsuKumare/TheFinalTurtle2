@@ -3,7 +3,6 @@
     <string name="title2ndPage">What We Can Do</string>
     <string name="flavor2ndPage">Participate in coastal clean-ups and reduce plastic use to keep our beaches and ocean clean. Trash in the ocean can harm sea turtles and other creatures that live there.</string>
     <string name="turtleButton">Click me to learn more online:</string>
-    <string name="turtleLink">www.fisheries.noaa.gov/feature-story/what-can-you-do-save-sea-turtles</string>
     <string name="summary">Turtles are struggling every day due to unnatural pollution caused by humans. We can are a nonprofit organization that has certified staff to take care of sea turtles that almost lost their lives and giving them a second chance to live. You guys can help too!</string>
     <string name="button1">What Can We Do?</string>
     <string name="button2">Donate Now!</string>
@@ -16,5 +15,9 @@
     <string name="year_text">Year</string>
     <string name="security_text">Security Code</string>
     <string name="pay_now_button">PAY NOW</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
 
 </resources>
