@@ -25,6 +25,16 @@ public class SecondPage extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        ImageView img2 = (ImageView)findViewById(R.id.turtleLink2);
+        img2.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("https://www.youtube.com/watch?v=cWfTBkTJOH8&list=PLcgKuZj61MF3tBfw_xuE5YEWhy_ib4e0I"));
+                startActivity(intent);
+            }
+        });
     }
 
 
