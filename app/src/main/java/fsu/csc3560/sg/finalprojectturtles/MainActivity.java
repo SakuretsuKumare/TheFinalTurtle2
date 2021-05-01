@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.view.View.OnClickListener;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,10 +29,5 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void sendHelpSite(View view) {
-        Uri uri = Uri.parse("www.fisheries.noaa.gov/feature-story/what-can-you-do-save-sea-turtles");
-        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-        startActivity(intent);
-    }
 
 }

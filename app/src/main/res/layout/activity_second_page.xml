@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ABF484"
     tools:context=".MainActivity">
 
     <TextView
@@ -48,10 +49,11 @@
         app:layout_constraintVertical_bias="0.042" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/turtleLink"
         android:layout_width="267dp"
         android:layout_height="146dp"
-        android:onClick="sendHelpSite"
+        android:tag="http://www.fisheries.noaa.gov/feature-story/what-can-you-do-save-sea-turtles"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.687"
