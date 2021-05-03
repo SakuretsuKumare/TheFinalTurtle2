@@ -16,6 +16,8 @@ public class SecondPage extends AppCompatActivity {
         setContentView(R.layout.activity_second_page);
 
         ImageView img = (ImageView)findViewById(R.id.turtleLink);
+
+        // Uses an OnClickListener() to go to the specific website.
         img.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Intent intent = new Intent();
@@ -25,6 +27,8 @@ public class SecondPage extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // Uses an OnClickListener() to go onto Youtube to watch turtle videos.
         ImageView img2 = (ImageView)findViewById(R.id.turtleLink2);
         img2.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){

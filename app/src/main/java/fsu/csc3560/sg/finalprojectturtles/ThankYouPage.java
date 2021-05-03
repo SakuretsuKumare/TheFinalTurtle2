@@ -18,11 +18,13 @@ public class ThankYouPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_thank_you_page);
 
+        // Changes the text box to display a randomly generated number
         final Random myRandom = new Random();
         final TextView textGenerateNumber = (TextView)findViewById(R.id.randomNumber);
         textGenerateNumber.setText("$" + String.valueOf(myRandom.nextInt(4000001)) + ".00");
     }
 
+    // Public function to go to the Main page for button onClick.
     public void homePage(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);

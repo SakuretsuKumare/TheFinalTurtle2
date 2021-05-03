@@ -1,5 +1,6 @@
 package fsu.csc3560.sg.finalprojectturtles;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -9,10 +10,11 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
-public class PaymentMethodFragment extends DialogFragment {
+public class ConfirmationFragment extends DialogFragment {
 
-    public PaymentMethodFragment() {
+    public ConfirmationFragment() {
         // Required empty public constructor
     }
 
@@ -20,12 +22,6 @@ public class PaymentMethodFragment extends DialogFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_payment_method, container, false);
-    }
-
-    // Public function to go to the Payment page for button onClick.
-    public void sendDonation(View view) {
-        Intent intent = new Intent(getActivity(), DonateMoneyActivity.class);
-        startActivity(intent);
+        return inflater.inflate(R.layout.fragment_confirmation, container, false);
     }
 }

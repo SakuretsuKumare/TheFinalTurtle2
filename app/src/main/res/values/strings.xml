@@ -27,5 +27,10 @@
     <string name="thank_you_title_text">Thank You For Donating!</string>
     <string name="thanks_description_text">Thanks to all the people who have donated money and support our cause. You can rest safely knowing that every penny goes towards non-profit organizations that are taking care of these endangered wild animals.</string>
     <string name="home_page_text">Home Page</string>
+    <string name="pay_amount_text">Please enter the amount of money you would like to donate.</string>
+    <string name="confirmation_text">CONFIRMATION</string>
+    <string name="confirmation_question_text">Are you sure you would like to make this purchase?</string>
+    <string name="no_text">No</string>
+    <string name="yes_text">Yes</string>
 
 </resources>

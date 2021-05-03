@@ -11,7 +11,7 @@
         android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/credit_button"
             android:layout_width="180dp"
             android:layout_height="50dp"
             android:layout_marginStart="32dp"
@@ -26,7 +26,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/button7"
+            android:id="@+id/debit_button"
             android:layout_width="180dp"
             android:layout_height="50dp"
             android:layout_marginTop="52dp"
@@ -38,7 +38,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button6"
+            app:layout_constraintTop_toBottomOf="@+id/credit_button"
             app:layout_constraintVertical_bias="0.0" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

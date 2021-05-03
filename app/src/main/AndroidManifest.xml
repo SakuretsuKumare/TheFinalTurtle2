@@ -10,8 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalProjectTurtles">
         <activity
-            android:name=".ThankYouPage"
+            android:name=".PaymentAmountActivity"
             android:parentActivityName=".DonateMoneyActivity" ></activity>
+        <activity
+            android:name=".ThankYouPage"
+            android:parentActivityName=".PaymentAmountActivity" />
         <activity
             android:name=".SecondPage"
             android:parentActivityName=".MainActivity" />

@@ -12,6 +12,7 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Declaring our variables.
     PaymentMethodFragment fragment;
     Button btn;
 
@@ -20,9 +21,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Assigning our widgets to the variables.
         fragment = new PaymentMethodFragment();
         btn = findViewById(R.id.donateButton);
 
+        // Uses an OnClickListener() to open up a DialogFragment.
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -31,11 +34,13 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    // Public function to go to the Information page page for button onClick.
     public void sendSecond(View view) {
         Intent intent = new Intent(this, SecondPage.class);
         startActivity(intent);
     }
 
+    // Public function to go to the Payment page for button onClick (currently Overridden).
     public void sendDonation(View view) {
         Intent intent = new Intent(this, DonateMoneyActivity.class);
         startActivity(intent);

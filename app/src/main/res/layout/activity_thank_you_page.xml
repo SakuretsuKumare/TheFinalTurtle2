@@ -68,7 +68,7 @@
         android:layout_width="160dp"
         android:layout_height="52dp"
         android:layout_marginTop="80dp"
-        android:backgroundTint="#DF1A86"
+        android:backgroundTint="#DA4848"
         android:onClick="homePage"
         android:text="@string/home_page_text"
         android:textSize="18sp"
