@@ -3,6 +3,7 @@ package fsu.csc3560.sg.finalprojectturtles;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -25,6 +26,7 @@ public class DonateMoneyActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_donate_money);
+
     /*
         firstName = findViewById(R.id.firstName);
         lastName = findViewById(R.id.lastName);
@@ -67,6 +69,9 @@ public class DonateMoneyActivity extends AppCompatActivity {
             Toast.makeText(this, "A security code is required!", Toast.LENGTH_SHORT).show();
         }
     }
-
  */
+    public void pay(View view) {
+        Intent intent = new Intent(this, ThankYouPage.class);
+        startActivity(intent);
+    }
 }

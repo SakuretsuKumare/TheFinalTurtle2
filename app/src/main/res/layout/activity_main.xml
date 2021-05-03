@@ -8,18 +8,19 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="180dp"
+        android:id="@+id/donateButton"
+        android:layout_width="175dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="17dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="86dp"
+        android:backgroundTint="#FF9800"
         android:onClick="sendDonation"
         android:text="@string/button2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/infoButton"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
@@ -54,17 +55,18 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="180dp"
+        android:id="@+id/infoButton"
+        android:layout_width="175dp"
         android:layout_height="48dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="17dp"
         android:layout_marginEnd="19dp"
         android:layout_marginBottom="86dp"
+        android:backgroundTint="#FF9800"
         android:onClick="sendSecond"
         android:text="@string/button1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintEnd_toStartOf="@+id/donateButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 

@@ -12,12 +12,24 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
+    PaymentMethodFragment fragment;
+    Button btn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
 
+        fragment = new PaymentMethodFragment();
+        btn = findViewById(R.id.donateButton);
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                fragment.show(getSupportFragmentManager(), "Fragment Support");
+            }
+        });
+    }
 
     public void sendSecond(View view) {
         Intent intent = new Intent(this, SecondPage.class);
@@ -28,6 +40,4 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DonateMoneyActivity.class);
         startActivity(intent);
     }
-
-
 }
