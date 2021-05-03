@@ -21,13 +21,11 @@ public class DonateMoneyActivity extends AppCompatActivity {
     EditText sCode;
     Button payButton;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_donate_money);
 
-    /*
         firstName = findViewById(R.id.firstName);
         lastName = findViewById(R.id.lastName);
         cardNumber =  findViewById(R.id.cardNumber);
@@ -35,21 +33,20 @@ public class DonateMoneyActivity extends AppCompatActivity {
         year = findViewById(R.id.year);
         sCode = findViewById(R.id.sCode);
 
-        payButton.setOnClickListener(new View.OnClickListener(){
+        /*payButton.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View view){
+            public void onClick(View view) {
                 checkDataEntered();
             }
-        });
-        */
+        });*/
     }
-/*
+
     boolean isEmpty(EditText text) {
         CharSequence str = text.getText().toString();
         return TextUtils.isEmpty(str);
     }
 
-    void checkDataEntered() {
+    /*void checkDataEntered() {
         if (isEmpty(firstName)) {
             Toast.makeText(this, "You must enter first name to register!", Toast.LENGTH_SHORT).show();
         }
@@ -68,8 +65,8 @@ public class DonateMoneyActivity extends AppCompatActivity {
         if (isEmpty(sCode)) {
             Toast.makeText(this, "A security code is required!", Toast.LENGTH_SHORT).show();
         }
-    }
- */
+    }*/
+
     public void pay(View view) {
         Intent intent = new Intent(this, ThankYouPage.class);
         startActivity(intent);
